@@ -1,0 +1,347 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 1s;
+    font-family: var(--font-text);
+    color: #ededed;
+}
+html, body {
+    scroll-behavior: smooth;
+    background-color: #202020;
+    width: 100%;
+    height: 100%; 
+    scrollbar-width: thin;
+    scrollbar-color: #ededed transparent;
+}
+a {
+    text-decoration: none;
+    color: #ededed;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+/* ScrolBar */
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+    /* Selection */
+body::-webkit-scrollbar-thumb {
+    background-color: #ededed;
+    border-radius: 10px;
+}
+*::selection {
+    background-color: var(--color-yellow);
+     color: #202020;
+}
+*::-moz-selection {
+    background-color: var(--color-yellow);
+    color: #202020;
+}
+:root {
+    --font-text: 'Tilt Neon', cursive;
+    --font-title: 'Gagalin';
+    --color-yellow: #c2b500;
+    --color-yellow-active: #9e9402;
+    --color-red: rgb(190, 2, 2);
+}
+.color-yellow {
+    color: var(--color-yellow);
+}
+            /* MAIN */
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../IMAGES/background.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1s;
+}
+main nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+main nav h5 {
+    color: #ededed;
+}
+main .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+main .body .div-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+main .body h1 {
+    font-size: 2.4rem;
+}
+main .body .div-body .div-socialNetworks {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+main .body .div-body .fa-brands {
+    font-size: 1.5rem;
+}
+            /* SECTIONS */
+section {
+    width: 100%;
+    height: auto;
+}
+    /* ABOUT US */
+#aboutUs {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#aboutUs h1 {
+    font-family: 'GAGALIN';
+    font-size: 5rem;
+}
+#aboutUs h1 .color-yellow {
+    font-family: 'GAGALIN';
+}
+#aboutUs b {
+    color: #ededed;
+}
+#aboutUs p {
+    color: #ededed;
+    font-size: 1.2rem;
+}
+    /* portfolio */
+#portfolio {
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#portfolio h1 .color-yellow {
+    font-family: 'GAGALIN';
+}
+#portfolio p {
+    color: #ededed;
+}
+#portfolio .div-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+#portfolio .div-carousel img {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+    /* contact */
+#contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+}
+#contact h1 .color-yellow {
+    font-family: 'GAGALIN';
+}
+#contact h1, h2, h3, h4, h5, h6, p {
+    color: #202020;
+}
+
+#contact .card-contact{
+    width: 80%;
+    height: 80%;
+    background-color: #ededed;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#contact .card-contact .div-card{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+#contact .card-contact p, b {
+    color: #202020;
+}
+#contact .card-contact .fa-brands {
+    color: #202020;
+    font-size: 1.5rem;
+}
+#contact .card-contact .fa-brands:hover {
+    color: var(--color-yellow);
+}
+#contact .card-contact .fa-solid {
+    color: #202020;
+}
+#contact .card-contact .socialNetworks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#contact .card-contact .card-2 {
+    background-color: var(--color-yellow);
+    background-image: url(../IMAGES/background2.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 15px 15px 0;
+}
+            /* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer div {
+    padding: 15px;
+    width: 80%;
+    border-top: 1px solid #ededed;
+}
+footer p {
+    color: #ededed;
+}
+            /* MEDIA SCREEN */
+@media (max-width: 1000px) {
+        /* MAIN */
+    main .body {
+        flex-direction: column;
+    }
+    main .body .div2 {
+        display: none;
+    }
+    main .body .div-body {
+        width: 100%;
+    }
+        /* aboutUs */
+    #aboutUs {
+        padding: 13px;
+        border-top: 1px solid #ededed;
+    }
+    #aboutUs h1 {
+        padding-bottom: 40px;
+        font-size: 2rem;
+    }
+        /* portfolio */
+    #portfolio {
+        border-top: 1px solid #ededed;
+        height: 40%;
+    }
+    #contact {
+        height: 60%;
+        border-top: 1px solid #ededed;
+    }
+    #contact .card-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .card-contact .div-card {
+        width: 100%;
+        height: 100%;
+    }
+    #contact .card-contact .card-2 {
+        display: none;
+    }
+}
+@media (max-height: 900px) {
+    #aboutUs {
+        height: 65%;
+    }
+    #portfolio {
+        border-top: 1px solid #ededed;
+        height: 60%;
+    }
+}
+@media (max-height: 700px) {
+    #aboutUs {
+        height: 80%;
+    }
+}
+            /* ANIMATIONS */
+    /* fadein */
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+    /* saltoImg */
+@keyframes saltoImg {
+    0%, 100% {top: 0;}
+    30% {top: -10px;}
+}
+    /* items-hover-animation */
+.item-hover {
+    transition: 0.25s;
+}
+.item-hover:hover {
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    color: var(--color-yellow);
+}
+.item-hover:active {
+    transform: translateY(-0.5em);
+    cursor: pointer;
+}
+    /*LineAnimation*/
+.lineAnimation span {
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.lineAnimation span:before,
+.lineAnimation span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #ededed;
+    transition: all 0.2s ease;
+}
+.lineAnimation span:after {
+    width: 0%;
+    height: 2px;
+}
+.lineAnimation span:hover:after {
+    width: 100%;
+}
+            /* FONTS */
+@font-face {
+    font-family: 'GAGALIN';
+    src: url(../RESOURCES/FONTS/gagalin.otf);
+}
